@@ -13,15 +13,13 @@ Basic BJT Current Mirror:
 In a basic BJT current mirror, two NPN transistors (Q1 and Q2) are used:
 Q1 is the reference transistor, with its collector connected to a voltage source (often a Vcc) through a resistor, and its emitter grounded.
 Q2 is the output transistor, which mirrors the current flowing through Q1. The base of Q2 is connected to the base of Q1, and the emitter of Q2 is connected to the same voltage level as the emitter of Q1.
-When a current 
-𝐼
-𝑅
-𝐸
-𝐹
-I 
-REF
-  flows through Q1, the same current (or a scaled version depending on the mirror ratio) flows through Q2. The ratio of the currents in the two transistors is determined by the ratio of their collector-emitter areas or other factors depending on the mirror design.
+When a current 𝐼𝑅𝐸𝐹I REF flows through Q1, the same current (or a scaled version depending on the mirror ratio) flows through Q2. The ratio of the currents in the two transistors is determined by the ratio of their collector-emitter areas or other factors depending on the mirror design.
   #AIM : Design and analysis currnet mirror circuit
+  # Calculation
+  Itotal=power/Vdd
+Itotal=1mw/1.8=0.55mA
+Itotal=Iref + Ix
+Iref=0.55ma/2=0.277mA
 
   # DC  Analysis
   For the current mirror to work correctly, the transistors must be matched in terms of size, threshold voltage (for MOSFETs), and other process parameters.
