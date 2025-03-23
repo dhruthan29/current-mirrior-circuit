@@ -23,7 +23,7 @@ Iref=0.55ma/2=0.277mA
   # DC  Analysis
   For the current mirror to work correctly, the transistors must be matched in terms of size, threshold voltage (for MOSFETs), and other process parameters.
 In DC analysis, you can confirm whether both transistors are operating under similar conditions and whether they are mirroring the current properly.
-  case1:ratio 1:1
+  # case1:ratio 1:1
   l=180nm w=20um for m1 m2 m3
   ![1](https://github.com/user-attachments/assets/fcf8e6a4-0f3b-436f-88dc-ec0b699bd167)
   vdd=1.8v
