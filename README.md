@@ -3,7 +3,6 @@
 A current mirror circuit is a commonly used configuration in analog electronics, typically employed to replicate a reference current in a load or another part of the circuit. It works by mirroring (or copying) the current flowing through one active device, such as a transistor, and using it to generate the same current in a different device, often in a different location.
 Basic Operation:
 A current mirror usually consists of two or more transistors (typically bipolar junction transistors, BJTs, or MOSFETs) that are connected in such a way that the current through one transistor is mirrored by the current through the other transistor(s).
-For BJTs:
 Matched Transistors: Two or more BJTs are matched (have the same characteristics) and are typically placed in a configuration where their base-emitter voltages are equal.
 Reference Current: A reference current is applied to the base of one transistor (the reference transistor), causing it to conduct a current.
 Mirror Current: The second transistor (output transistor) will conduct the same current because the base-emitter voltage of the output transistor is the same as that of the reference transistor (assuming both are in thermal equilibrium and have matched characteristics).
@@ -33,6 +32,7 @@ In DC analysis, you can confirm whether both transistors are operating under sim
   for m3 w=180nm l=20um ,m2&m3=w=180nm l=40um
   ![2](https://github.com/user-attachments/assets/f05c87e0-7264-44ca-8b90-c58edc2e8c8e)
   when we varry the w/l the mosfet  the id current changes doubled  111111;
+  Saturation Condition for MOSFETs: For an NMOS transistor to be in saturation: VDS>VGS−Vth​therefore MOSFET is in saturation.
   # case 3 1:3
   for m3 w=20um l=180nm for m1&m2 w=60um l=180nm
   ![3](https://github.com/user-attachments/assets/8288abcc-caf8-4da1-b02c-10948ba34036)
