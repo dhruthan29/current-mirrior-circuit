@@ -28,7 +28,7 @@ In DC analysis, you can confirm whether both transistors are operating under sim
   ![1](https://github.com/user-attachments/assets/fcf8e6a4-0f3b-436f-88dc-ec0b699bd167)
   vdd=1.8v
   I1=0.277mA
-  #case 2 1:2
+  # case 2 1:2
   for m3 w=180nm l=20um ,m2&m3=w=180nm l=40um
   ![2](https://github.com/user-attachments/assets/f05c87e0-7264-44ca-8b90-c58edc2e8c8e)
   when we varry the w/l the mosfet  the id current changes doubled  111111;
