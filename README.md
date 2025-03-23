@@ -36,7 +36,10 @@ In DC analysis, you can confirm whether both transistors are operating under sim
   # case 3 1:3
   for m3 w=20um l=180nm for m1&m2 w=60um l=180nm
   ![3](https://github.com/user-attachments/assets/8288abcc-caf8-4da1-b02c-10948ba34036)
-  #Transient Analysis
+  # Transient Analysis
+  shows how fast the current mirror settles to its steady-state value. If the time constant is large, it will take longer for the circuit to stabilize after a change, leading to a slower transient response.
+  A current mirror typically has a load connected to the output. The load can affect how the output current responds to transient conditions.
+  In some cases, when the current mirror is first powered on, there may be an initial surge or spike in current as the transistors begin to operate. The start-up transient behavior of the current mirror is important to analyze, especially if the circuit is part of a larger system where the current mirror must quickly stabilize.
   gain=10v/v
   ![4](https://github.com/user-attachments/assets/1c9c42bf-9f7a-4ea3-a969-df211a6a0ff2)
 
