@@ -25,23 +25,41 @@ Iref=0.55ma/2=0.277mA
 In DC analysis, you can confirm whether both transistors are operating under similar conditions and whether they are mirroring the current properly.
   # case1:ratio 1:1
   l=180nm w=20um for m1 m2 m3
-
+  ![dc1](https://github.com/user-attachments/assets/e6daeafe-52e8-45d9-8970-e96f6e425289)
   vdd=1.8v
   I1=0.277mA
   # case 2 1:2
   for m3 w=18.35m l=500um ,m2&m3=w=18.35nm l=500um
-  
-  when we varry the w/l the mosfet  the id current changes doubled  111111;
+  ![dc2](https://github.com/user-attachments/assets/e3edba9d-e588-4292-b21b-83391dbf1f27)
   Saturation Condition for MOSFETs: For an NMOS transistor to be in saturation: VDS>VGS−Vth​therefore MOSFET is in saturation.
   # case 3 
   for m3 w=14.65mm l=1um for m1&m2 w=14.65mm l=1umm
+
+![d3](https://github.com/user-attachments/assets/2db1c4b7-1572-49cb-b4a3-2b62da4bf95c)
 
   # Transient Analysis
   shows how fast the current mirror settles to its steady-state value. If the time constant is large, it will take longer for the circuit to stabilize after a change, leading to a slower transient response.
   A current mirror typically has a load connected to the output. The load can affect how the output current responds to transient conditions.
   In some cases, when the current mirror is first powered on, there may be an initial surge or spike in current as the transistors begin to operate. The start-up transient behavior of the current mirror is important to analyze, especially if the circuit is part of a larger system where the current mirror must quickly stabilize.
   gain=10v/v
-  ![4](https://github.com/user-attachments/assets/1c9c42bf-9f7a-4ea3-a969-df211a6a0ff2)
+ # vin
+
+ ![vin transient](https://github.com/user-attachments/assets/54158d2f-f922-4c11-aecf-98ae8e9a7e43)
+ # vout 
+
+ ![vouttransient](https://github.com/user-attachments/assets/051424c0-25ae-4298-b3f6-6452f1062dba)
+ # Diffretial Pair with current Mirror
+ 
+In the case of a MOSFET-based differential pair, we use two MOSFETs (let's call them M1 and M2) to amplify the difference between two input signals. The gates (or in some cases, the sources) of these MOSFETs are connected to the differential input signals.
+M1: The gate of M1 is connected to one input signal, 𝑉𝑖𝑛1V in1​ .
+M2: The gate of M2 is connected to the second input signal, 𝑉𝑖𝑛
+2V in2
+The source terminals of both MOSFETs are typically connected together and biased by a current source, ensuring that the total current flowing through the differential pair is constant
+The two MOSFETs (M1 and M2) form the differential pair, where the source terminals are connected to a current source or an active load.
+
+The gates of the MOSFETs receive the differential input signals 𝑉𝑖𝑛1V in1 and 𝑉𝑖𝑛2V in2
+ and the drains are connected to the current mirror (MOSFETs M3 and M4).
+The current mirror controls the current through the differential pair based on the difference in the gate voltages of M1 and M2.
 
 
   # Inference 
