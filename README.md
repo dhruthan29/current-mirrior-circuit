@@ -60,7 +60,19 @@ The two MOSFETs (M1 and M2) form the differential pair, where the source termina
 The gates of the MOSFETs receive the differential input signals 𝑉𝑖𝑛1V in1 and 𝑉𝑖𝑛2V in2
  and the drains are connected to the current mirror (MOSFETs M3 and M4).
 The current mirror controls the current through the differential pair based on the difference in the gate voltages of M1 and M2.
+# Circuit
+![ckt](https://github.com/user-attachments/assets/5d078be7-fe3d-4377-a1cb-7e099315363f)
+
 # DC Analysis
+![dccurrent](https://github.com/user-attachments/assets/686a8f44-ca7d-48bf-a019-25faf898b4c0)
+# AC Analysis
+![ac1](https://github.com/user-attachments/assets/34310741-6327-4ba4-8eb2-e0b2af99e1ad)
+# Transient Analysis
+![diffcuvout](https://github.com/user-attachments/assets/edfe95dd-464a-483c-aa8d-4dcb78f3e22b)
+
+
+
+
 
 
 
