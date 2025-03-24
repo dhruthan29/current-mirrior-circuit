@@ -25,17 +25,17 @@ Iref=0.55ma/2=0.277mA
 In DC analysis, you can confirm whether both transistors are operating under similar conditions and whether they are mirroring the current properly.
   # case1:ratio 1:1
   l=180nm w=20um for m1 m2 m3
-  ![1](https://github.com/user-attachments/assets/fcf8e6a4-0f3b-436f-88dc-ec0b699bd167)
+
   vdd=1.8v
   I1=0.277mA
   # case 2 1:2
-  for m3 w=180nm l=20um ,m2&m3=w=180nm l=40um
-  ![2](https://github.com/user-attachments/assets/f05c87e0-7264-44ca-8b90-c58edc2e8c8e)
+  for m3 w=18.35m l=500um ,m2&m3=w=18.35nm l=500um
+  
   when we varry the w/l the mosfet  the id current changes doubled  111111;
   Saturation Condition for MOSFETs: For an NMOS transistor to be in saturation: VDS>VGS−Vth​therefore MOSFET is in saturation.
-  # case 3 1:3
-  for m3 w=20um l=180nm for m1&m2 w=60um l=180nm
-  ![3](https://github.com/user-attachments/assets/8288abcc-caf8-4da1-b02c-10948ba34036)
+  # case 3 
+  for m3 w=14.65mm l=1um for m1&m2 w=14.65mm l=1umm
+
   # Transient Analysis
   shows how fast the current mirror settles to its steady-state value. If the time constant is large, it will take longer for the circuit to stabilize after a change, leading to a slower transient response.
   A current mirror typically has a load connected to the output. The load can affect how the output current responds to transient conditions.
